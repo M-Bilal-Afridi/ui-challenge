@@ -10,6 +10,7 @@ class HomePage extends StatelessWidget {
         body: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 25.0, vertical: 16.0),
           child: SingleChildScrollView(
+            physics: BouncingScrollPhysics(),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
               children: [
@@ -83,87 +84,92 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 160,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.green[500],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            SizedBox(height: 10),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(
-                                Icons.account_balance_wallet,
-                                size: 30,
-                                color: Colors.green,
+                    Expanded(
+                      child: Container(
+                        height: 160,
+                        width: 160,
+                        decoration: BoxDecoration(
+                          color: Colors.green[500],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              SizedBox(height: 10),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.account_balance_wallet,
+                                  size: 30,
+                                  color: Colors.green,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 10),
-                            Text(
-                              'Transactions',
-                              style: TextStyle(
-                                fontSize: 18,
-                                color: Colors.white,
+                              SizedBox(height: 10),
+                              Text(
+                                'Transactions',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              '2 Times',
-                              style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.white,
+                              SizedBox(height: 5),
+                              Text(
+                                '2 Times',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                    Container(
-                      height: 160,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.red[500],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            SizedBox(height: 10),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(
-                                Icons.attach_money,
-                                size: 30,
-                                color: Colors.red,
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Container(
+                        height: 160,
+                        width: 160,
+                        decoration: BoxDecoration(
+                          color: Colors.red[500],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              SizedBox(height: 10),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.attach_money,
+                                  size: 30,
+                                  color: Colors.red,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 15),
-                            Text(
-                              'Budget',
-                              style: TextStyle(
-                                fontSize: 18,
-                                color: Colors.white,
+                              SizedBox(height: 15),
+                              Text(
+                                'Budget',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              '2 Times',
-                              style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.white,
+                              SizedBox(height: 5),
+                              Text(
+                                '2 Times',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -175,87 +181,92 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 160,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.blue[500],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            SizedBox(height: 10),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(
-                                Icons.star,
-                                size: 30,
-                                color: Colors.yellow,
+                    Expanded(
+                      child: Container(
+                        height: 160,
+                        width: 160,
+                        decoration: BoxDecoration(
+                          color: Colors.blue[500],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              SizedBox(height: 10),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.star,
+                                  size: 30,
+                                  color: Colors.yellow,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 10),
-                            Text(
-                              'Recomendation',
-                              style: TextStyle(
-                                fontSize: 18,
-                                color: Colors.white,
+                              SizedBox(height: 10),
+                              Text(
+                                'Recomendation',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              '2 Times',
-                              style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.white,
+                              SizedBox(height: 5),
+                              Text(
+                                '2 Times',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                    Container(
-                      height: 160,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.deepPurple[500],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 16.0),
-                        child: Column(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          crossAxisAlignment: CrossAxisAlignment.start,
-                          children: const [
-                            SizedBox(height: 10),
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(
-                                Icons.add_card,
-                                size: 30,
-                                color: Colors.deepPurple,
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Container(
+                        height: 160,
+                        width: 160,
+                        decoration: BoxDecoration(
+                          color: Colors.deepPurple[500],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                          child: Column(
+                            mainAxisAlignment: MainAxisAlignment.center,
+                            crossAxisAlignment: CrossAxisAlignment.start,
+                            children: const [
+                              SizedBox(height: 10),
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.add_card,
+                                  size: 30,
+                                  color: Colors.deepPurple,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 10),
-                            Text(
-                              'Credit Cards',
-                              style: TextStyle(
-                                fontSize: 18,
-                                color: Colors.white,
+                              SizedBox(height: 10),
+                              Text(
+                                'Credit Cards',
+                                style: TextStyle(
+                                  fontSize: 18,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                            SizedBox(height: 5),
-                            Text(
-                              '2 Cards',
-                              style: TextStyle(
-                                fontSize: 14,
-                                color: Colors.white,
+                              SizedBox(height: 5),
+                              Text(
+                                '2 Cards',
+                                style: TextStyle(
+                                  fontSize: 14,
+                                  color: Colors.white,
+                                ),
                               ),
-                            ),
-                          ],
+                            ],
+                          ),
                         ),
                       ),
                     ),
@@ -275,69 +286,74 @@ class HomePage extends StatelessWidget {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceBetween,
                   children: [
-                    Container(
-                      height: 50,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                        child: Row(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(
-                                Icons.account_balance_sharp,
-                                size: 30,
-                                color: Colors.deepPurple[400],
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        width: 160,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.account_balance_sharp,
+                                  size: 30,
+                                  color: Colors.deepPurple[400],
+                                ),
                               ),
-                            ),
-                            const SizedBox(
-                              width: 10,
-                            ),
-                            const Text(
-                              'Branch \nServices',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w500,
+                              const SizedBox(
+                                width: 10,
                               ),
-                            ),
-                          ],
+                              const Text(
+                                'Branch \nServices',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
-                    Container(
-                      height: 50,
-                      width: 160,
-                      decoration: BoxDecoration(
-                        color: Colors.grey[300],
-                        borderRadius: BorderRadius.circular(12),
-                      ),
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(horizontal: 8.0),
-                        child: Row(
-                          children: [
-                            CircleAvatar(
-                              backgroundColor: Colors.white,
-                              child: Icon(
-                                Icons.account_balance_wallet_outlined,
-                                size: 30,
-                                color: Colors.deepPurple[400],
+                    const SizedBox(width: 10),
+                    Expanded(
+                      child: Container(
+                        height: 50,
+                        width: 160,
+                        decoration: BoxDecoration(
+                          color: Colors.grey[300],
+                          borderRadius: BorderRadius.circular(12),
+                        ),
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(horizontal: 8.0),
+                          child: Row(
+                            children: [
+                              CircleAvatar(
+                                backgroundColor: Colors.white,
+                                child: Icon(
+                                  Icons.account_balance_wallet_outlined,
+                                  size: 30,
+                                  color: Colors.deepPurple[400],
+                                ),
                               ),
-                            ),
-                            const SizedBox(
-                              width: 10,
-                            ),
-                            const Text(
-                              'Make a\nPayment',
-                              textAlign: TextAlign.start,
-                              style: TextStyle(
-                                fontWeight: FontWeight.w500,
+                              const SizedBox(
+                                width: 10,
                               ),
-                            ),
-                          ],
+                              const Text(
+                                'Make a\nPayment',
+                                textAlign: TextAlign.start,
+                                style: TextStyle(
+                                  fontWeight: FontWeight.w500,
+                                ),
+                              ),
+                            ],
+                          ),
                         ),
                       ),
                     ),
